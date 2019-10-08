@@ -28,3 +28,9 @@ import { For } from './lib'
 ```
 DefaultComponent为默认组件可以传入组件或者jsx 当data为空时渲染 可选传递
 
+```
+<For data={data1} DefaultComponent={Default1}>
+  {(item, index) => (<div key={index}>{item}</div>)}
+  <div>这个依然可以渲染出来</div>
+</For>
+```
