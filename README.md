@@ -7,12 +7,12 @@ import { If } from './lib'
   <span>aaa</span>
 </If>
 ```
-when是条件判断 当为true是渲染内部组件
-DefaultComponent为默认组件可以传入组件或者jsx 当when为false时渲染
+when是条件判断 当为true是渲染内部组件 必须传递
+DefaultComponent为默认组件可以传入组件或者jsx 当when为false时渲染  可选传递
 
 
 # For组件用法
-data可以传入数组或者对象
+data可以传入数组或者对象 必须传递
 当为对象时
 ```
 import { For } from './lib'
@@ -26,5 +26,5 @@ import { For } from './lib'
   {(item, index) => (<div key={index}>{item}</div>)}
 </For>
 ```
-DefaultComponent为默认组件可以传入组件或者jsx 当data为空时渲染
+DefaultComponent为默认组件可以传入组件或者jsx 当data为空时渲染 可选传递
 
