@@ -46,9 +46,10 @@ function App() {
 				<Case when={2} component={Comp2}></Case>
 				<Case when={3} component={Comp3}></Case>
 			</Switch>
-    </div>
+    		</div>
 	);
 }
 ```
-component 可以传入组件或者jsx 当value的值与when 全等时渲染component的组件(jsx) when 和 value 为必传值
+component 可以传入组件或者jsx 
+当value的值与when 全等时渲染component的组件(jsx) when 和 value 为必传值
 DefaultComponent为默认组件 当没有匹配到时渲染 可以传递组件和jsx 可传值
