@@ -34,3 +34,21 @@ DefaultComponent为默认组件可以传入组件或者jsx 当data为空时渲�
   <div>这个依然可以渲染出来</div>
 </For>
 ```
+# Switch Case组件用法
+```
+import { Switch, Case } from './lib'
+function App() {
+	const a = 4
+	return (
+		<div className="App">
+			<Switch value={a} DefaultComponent={Default}>
+				<Case when={1} component={Comp1}></Case>
+				<Case when={2} component={Comp2}></Case>
+				<Case when={3} component={Comp3}></Case>
+			</Switch>
+    </div>
+	);
+}
+```
+component 可以传入组件或者jsx 当value的值与when 全等时渲染component的组件(jsx) when 和 value 为必传值
+DefaultComponent为默认组件 当没有匹配到时渲染 可以传递组件和jsx 可传值
